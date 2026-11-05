@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html, body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; /* Ẩn đi phần thừa của iframe */
+            background-color: #f8f5ec;
+        }
+
+        iframe {
+            width: 100vw;
+            /* Cao hơn màn hình 100px. Phần 100px này sẽ bị body nuốt mất, kéo theo nút Zalo biến mất */
+            height: calc(100vh + 100px); 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://uplocket.io.vn" allowfullscreen></iframe>
+</body>
+</html>
